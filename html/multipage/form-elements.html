@@ -12,7 +12,7 @@
   
   <header id=head class="head with-buttons">
    <a href=https://whatwg.org/ class=logo><img width=100 alt=WHATWG crossorigin="" class=darkmode-aware src=https://resources.whatwg.org/logo.svg height=100></a>
-   <hgroup><h1 class=allcaps>HTML</h1><p id=living-standard>Living Standard — Last Updated <span class=pubdate>3 October 2025</span></hgroup>
+   <hgroup><h1 class=allcaps>HTML</h1><p id=living-standard>Living Standard — Last Updated <span class=pubdate>7 October 2025</span></hgroup>
    
    
 
@@ -1087,25 +1087,8 @@ interface <dfn id=htmloptgroupelement data-dfn-type=interface>HTMLOptGroupElemen
   element.</p>
 
   <div data-algorithm="">
-  <p>The <code id=the-optgroup-element:the-optgroup-element-7><a href=#the-optgroup-element>optgroup</a></code> <a href=infrastructure.html#html-element-removing-steps id=the-optgroup-element:html-element-removing-steps>HTML element removing
-  steps</a>, given <var>removedNode</var> and <var>oldParent</var>, are:</p>
-
-  <ol><li><p>If <var>oldParent</var> is a <code id=the-optgroup-element:the-select-element-3><a href=#the-select-element>select</a></code> element and <var>removedNode</var> has an
-   <code id=the-optgroup-element:the-option-element-8><a href=#the-option-element>option</a></code> child, then run <var>oldParent</var>'s <a href=#selectedness-setting-algorithm id=the-optgroup-element:selectedness-setting-algorithm>selectedness setting
-   algorithm</a>.</ol>
-  </div>
-
-  <div data-algorithm="">
-  <p>The <code id=the-optgroup-element:the-optgroup-element-8><a href=#the-optgroup-element>optgroup</a></code> <a id=the-optgroup-element:html-element-moving-steps href=infrastructure.html#html-element-moving-steps>HTML element moving steps</a>, given <var>movedNode</var>
-  and <var>oldParent</var>, are:</p>
-
-  <ol><li><p>Run the <code id=the-optgroup-element:the-optgroup-element-9><a href=#the-optgroup-element>optgroup</a></code> <a id=the-optgroup-element:html-element-removing-steps-2 href=infrastructure.html#html-element-removing-steps>HTML element removing steps</a> given
-   <var>movedNode</var> and <var>oldParent</var>.</ol>
-  </div>
-
-  <div data-algorithm="">
   <p>To <dfn id=concept-optgroup-label>get an <code>optgroup</code> element's label</dfn>,
-  given an <code id=the-optgroup-element:the-optgroup-element-10><a href=#the-optgroup-element>optgroup</a></code> <var>optgroup</var>:</p>
+  given an <code id=the-optgroup-element:the-optgroup-element-7><a href=#the-optgroup-element>optgroup</a></code> <var>optgroup</var>:</p>
 
   <ol><li><p>If <var>optgroup</var> has a child <code id=the-optgroup-element:the-legend-element-3><a href=#the-legend-element>legend</a></code> element, then return the result of
    <a href=https://infra.spec.whatwg.org/#strip-and-collapse-ascii-whitespace id=the-optgroup-element:strip-and-collapse-ascii-whitespace data-x-internal=strip-and-collapse-ascii-whitespace>stripping and collapsing ASCII
@@ -1118,16 +1101,16 @@ interface <dfn id=htmloptgroupelement data-dfn-type=interface>HTMLOptGroupElemen
 
   <p>The value of the <a href=#concept-optgroup-label id=the-optgroup-element:concept-optgroup-label><code>optgroup</code> label
   algorithm</a> gives the name of the group, for the purposes of the user interface. User agents should use this attribute's value when labeling the group of
-  <code id=the-optgroup-element:the-option-element-9><a href=#the-option-element>option</a></code> elements in a <code id=the-optgroup-element:the-select-element-4><a href=#the-select-element>select</a></code> element.</p>
+  <code id=the-optgroup-element:the-option-element-8><a href=#the-option-element>option</a></code> elements in a <code id=the-optgroup-element:the-select-element-3><a href=#the-select-element>select</a></code> element.</p>
 
-  <p class=note>There is no way to select an <code id=the-optgroup-element:the-optgroup-element-11><a href=#the-optgroup-element>optgroup</a></code> element. Only
-  <code id=the-optgroup-element:the-option-element-10><a href=#the-option-element>option</a></code> elements can be selected. An <code id=the-optgroup-element:the-optgroup-element-12><a href=#the-optgroup-element>optgroup</a></code> element merely provides a
-  label for a group of <code id=the-optgroup-element:the-option-element-11><a href=#the-option-element>option</a></code> elements.</p>
+  <p class=note>There is no way to select an <code id=the-optgroup-element:the-optgroup-element-8><a href=#the-optgroup-element>optgroup</a></code> element. Only
+  <code id=the-optgroup-element:the-option-element-9><a href=#the-option-element>option</a></code> elements can be selected. An <code id=the-optgroup-element:the-optgroup-element-9><a href=#the-optgroup-element>optgroup</a></code> element merely provides a
+  label for a group of <code id=the-optgroup-element:the-option-element-10><a href=#the-option-element>option</a></code> elements.</p>
 
   <div class=example>
 
    <p>The following snippet shows how a set of lessons from three courses could be offered in a
-   <code id=the-optgroup-element:the-select-element-5><a href=#the-select-element>select</a></code> drop-down widget:</p>
+   <code id=the-optgroup-element:the-select-element-4><a href=#the-select-element>select</a></code> drop-down widget:</p>
 
    <pre><code class=html>&lt;form action="courseselector.dll" method="get">
  &lt;p>Which course would you like to watch today?
@@ -1410,12 +1393,11 @@ interface <dfn id=htmloptionelement data-dfn-type=interface>HTMLOptionElement</d
   </div>
 
   <div data-algorithm="">
-  <p>The <dfn data-dfn-for=HTMLOptionElement id=dom-option-form data-dfn-type=attribute><code>form</code></dfn> IDL
-  attribute's behavior depends on whether the <code id=the-option-element:the-option-element-29><a href=#the-option-element>option</a></code> element is in a
-  <code id=the-option-element:the-select-element-14><a href=#the-select-element>select</a></code> element or not. If the <code id=the-option-element:the-option-element-30><a href=#the-option-element>option</a></code> has a <code id=the-option-element:the-select-element-15><a href=#the-select-element>select</a></code> element
-  as its parent, or has an <code id=the-option-element:the-optgroup-element-4><a href=#the-optgroup-element>optgroup</a></code> element as its parent and that
-  <code id=the-option-element:the-optgroup-element-5><a href=#the-optgroup-element>optgroup</a></code> element has a <code id=the-option-element:the-select-element-16><a href=#the-select-element>select</a></code> element as its parent, then the <code id=the-option-element:dom-option-form-2><a href=#dom-option-form>form</a></code> IDL attribute must return the same value as the <code id=the-option-element:dom-fae-form><a href=form-control-infrastructure.html#dom-fae-form>form</a></code> IDL attribute on that <code id=the-option-element:the-select-element-17><a href=#the-select-element>select</a></code> element. Otherwise, it
-  must return null.</p>
+  <p>The <dfn data-dfn-for=HTMLOptionElement id=dom-option-form data-dfn-type=attribute><code>form</code></dfn>
+  getter steps are:</p>
+
+  <ol><li><p>Let <var>select</var> be <a id=the-option-element:this-7 href=https://webidl.spec.whatwg.org/#this data-x-internal=this>this</a>'s <a href=#option-element-nearest-ancestor-select id=the-option-element:option-element-nearest-ancestor-select-2><code>option</code> element nearest
+   ancestor <code>select</code></a>.<li><p>If <var>select</var> is null, then return null.<li><p>Return <var>select</var>'s <a id=the-option-element:form-owner href=form-control-infrastructure.html#form-owner>form owner</a>.</ol>
   </div>
 
   <div data-algorithm="">
@@ -1434,7 +1416,7 @@ interface <dfn id=htmloptionelement data-dfn-type=interface>HTMLOptionElement</d
   </div>
 
   <div data-algorithm="">
-  <p>To <dfn id=collect-option-text>collect option text</dfn>, given an <code id=the-option-element:the-option-element-31><a href=#the-option-element>option</a></code> element <var>option</var> and a
+  <p>To <dfn id=collect-option-text>collect option text</dfn>, given an <code id=the-option-element:the-option-element-29><a href=#the-option-element>option</a></code> element <var>option</var> and a
   boolean <var>includeAltText</var>:</p>
 
   <ol><li><p>Let <var>text</var> be the empty string.<li>
@@ -1458,10 +1440,10 @@ interface <dfn id=htmloptionelement data-dfn-type=interface>HTMLOptionElement</d
   
 
   <p id=note-option-no-value class=note><a href=#note-option-no-value class=self-link></a>When no <code id=the-option-element:attr-option-value-7><a href=#attr-option-value>value</a></code>
-  attribute is set on the <code id=the-option-element:the-option-element-32><a href=#the-option-element>option</a></code> element, its text contents are used to generate a
-  submittable value. In the case that the <code id=the-option-element:the-option-element-33><a href=#the-option-element>option</a></code> element has child elements, this can
-  lead to unexpected results such as <code id=the-option-element:the-option-element-34><a href=#the-option-element>option</a></code> elements which render differently but have
-  the same value. In order to address this, setting the <code id=the-option-element:attr-option-value-8><a href=#attr-option-value>value</a></code> attribute on <code id=the-option-element:the-option-element-35><a href=#the-option-element>option</a></code> elements is
+  attribute is set on the <code id=the-option-element:the-option-element-30><a href=#the-option-element>option</a></code> element, its text contents are used to generate a
+  submittable value. In the case that the <code id=the-option-element:the-option-element-31><a href=#the-option-element>option</a></code> element has child elements, this can
+  lead to unexpected results such as <code id=the-option-element:the-option-element-32><a href=#the-option-element>option</a></code> elements which render differently but have
+  the same value. In order to address this, setting the <code id=the-option-element:attr-option-value-8><a href=#attr-option-value>value</a></code> attribute on <code id=the-option-element:the-option-element-33><a href=#the-option-element>option</a></code> elements is
   recommended.</p>
 
 
