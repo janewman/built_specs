@@ -1,1 +1,1 @@
-* [Focusgroup](https://janewman.github.io/built_specs/html/multipage/dnd.html#the-focusgroup-attribute)
+* [Focusgroup](https://janewman.github.io/built_specs/html/multipage/interaction.html#the-focusgroup-attribute)
